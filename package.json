@@ -13,11 +13,13 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "global": "^4.4.0",
     "gray-matter": "^4.0.2",
     "highlight.js": "^10.1.1",
     "marked": "^1.1.0",
     "polka": "next",
-    "sirv": "^0.4.0"
+    "sirv": "^0.4.0",
+    "vercel": "^19.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

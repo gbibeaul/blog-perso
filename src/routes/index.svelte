@@ -1,22 +1,23 @@
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch(`blog.json`)
+      .then(r => r.json())
+      .then(posts => {
+        return { posts };
+      });
+  }
+</script>
+
+<script>
+  import BlogCard from "../components/BlogCard.svelte";
+  export let posts;
+</script>
+
 <style>
   h1,
-  figure,
-  p {
+  figure {
     text-align: center;
     margin: 0 auto;
-  }
-
-  .hero {
-    /* The image used */
-    background-image: url("/hero.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   h1 {
@@ -27,13 +28,7 @@
   }
 
   figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
+    margin: 0 0 2em 0;
   }
 
   p {
@@ -45,20 +40,37 @@
       font-size: 4em;
     }
   }
+
+  .articlesContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .articlesContent {
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .articlesContent {
+      justify-content: space-between;
+    }
+  }
 </style>
 
 <svelte:head>
   <title>Frontend Devops</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>Recent articles</h1>
 
 <figure>
-  <figcaption>Have fun with Sapper!</figcaption>
+  <figcaption>The most recent trends in web Devops practises!</figcaption>
 </figure>
 
-<p>
-  <strong>
-    Try editing this file (src/routes/index.svelte) to test live reloading.
-  </strong>
-</p>
+<main class="articlesContent">
+  {#each posts as post}
+    <BlogCard {...post} />
+  {/each}
+</main>
