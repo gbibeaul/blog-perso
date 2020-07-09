@@ -13,7 +13,7 @@ image: "images/paulo-victor-lJ37JsyEJP0-unsplash.jpg"
 
 ### **Vercel Serverless Functions**
 
-[Vercel](https://vercel.com/), the company behind [Next.js](https://nextjs.org/) and the [SWR fetching library](https://github.com/vercel/swr), has a nice serverless offering. They recently came out with zero configuration deployments. These deployments open the door to really fast project setup and deployments. Today in this first tutorial we will cover how to set up a Typescript REST API using Vercel Serverless Functions with minimal overhead.
+[Vercel](https://vercel.com/), the company behind [Next.js](https://nextjs.org/) and the [SWR fetching library](https://github.com/vercel/swr), has a nice serverless offering. They recently came out with zero configuration deployments. These deployments open the door to really fast project setup and deployments. Today, in this first tutorial we will cover how to set up a Typescript REST API using Vercel Serverless Functions with minimal overhead.
 
 ### **Setting up**
 
@@ -39,7 +39,7 @@ Let's add the only dev dependency to run our project locally.
 yarn add vercel -D
 ```
 
-Once this is done open the project folder in your favourite editor and open `package.json`. We will need to add a script section to have a proper dev environment. We will need a script for deploying and a script for starting the dev server. Your file should look like this.
+Once this is done, open the project folder in your favourite editor and open `package.json`. We will need to add a script section to have a proper dev environment. We will need a script for deploying and a script for starting the dev server. Your file should look like this.
 
 ```json
 {
@@ -77,14 +77,14 @@ yarn start
 
 This will start a local development server on http://localhost:3000/api. Navigating to this first endpoint will give you a Hello world Message.
 
-Now let's go ahead and add a dynamic route using query parameters. Vercel Serverless Function handles dynamic routes in a similar way to next.js. You can use the `[paramName].ts` syntax to define the name of the query parameter. To see this in action let's create a user folder and id route:
+Now let's go ahead and add a dynamic route using query parameters. Vercel Serverless Function handles dynamic routes in a similar way to Next.js. You can use the `[paramName].ts` syntax to define the name of the query parameter. To see this in action, let's create a user folder and id route:
 
 ```bash
 mkdir api/users
 touch "api/users/[id].ts"
 ```
 
-in your `api/users/[id].ts` file add the following code.
+In your `api/users/[id].ts` file, add the following code.
 
 ```typescript
 import { NowRequest, NowResponse } from "@vercel/node";
@@ -97,11 +97,11 @@ export default (req: NowRequest, res: NowResponse) => {
 };
 ```
 
-You can access the query parameter under the req.query object made available to the handler. Navigating or sending a request to `http://localhost:3000/api/users/0` Should now give you the corresponding user from the users array: `{user: "Bob Smith"}`.
+You can access the query parameter under the req.query object made available to the handler. Navigating or sending a request to `http://localhost:3000/api/users/0` Should now give you the corresponding user from the `users` array: `{user: "Bob Smith"}`.
 
 ### **Deploying**
 
-Now that you have the basic folder structure and code of your API we can proceed and deploy the API on Vercel's cloud platform. One interesting thing to note before proceeding is that Vercel is let's us use Typescript without even needing to compile in Webpack or having to configure anything. While this is not recommended for production projects it is interesting to get a prototype API online quickly! Now let's deploy all of this:
+Now that you have the basic folder structure and code of your API we can proceed and deploy the API on Vercel's cloud platform. One interesting thing to note before proceeding is that Vercel is lets us use Typescript without even needing to compile in Webpack or having to configure anything. While this is not recommended for production projects, it is interesting to get a prototype API online quickly! Now let's deploy all of this:
 
 ```bash
 yarn deploy
