@@ -7,7 +7,7 @@ tags: ["Vercel", "Typescript", "Node"]
 image: "images/paulo-victor-lJ37JsyEJP0-unsplash.jpg"
 ---
 
-Probably the simplest way to deploy a REST api in 2020.
+#### **Get your REST api deployed in less than 10 minutes!**
 
 ![Zeit is now Vercel](images/vercel.png)
 
