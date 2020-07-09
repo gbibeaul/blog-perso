@@ -1,13 +1,13 @@
 ---
 slug: build-deploy-a-vercel-api
 title: How to build and deploy a Node API on Vercel Serverless functions
-caption: Learn the easiest API depoyment in town...
+caption: Learn the easiest API deployment in town...
 date: "9 July 2020"
 tags: ["Vercel", "Typescript", "Node"]
 image: "images/paulo-victor-lJ37JsyEJP0-unsplash.jpg"
 ---
 
-#### **Get your REST api deployed in less than 10 minutes!**
+#### **Get your REST API deployed in less than 10 minutes!**
 
 ![Abstract image](images/jr-korpa-stwHyPWNtbI-unsplash.jpg)
 
@@ -89,7 +89,7 @@ in your `api/users/[id].ts` file add the following code.
 ```typescript
 import { NowRequest, NowResponse } from "@vercel/node";
 
-const users = ["Bob Smith", "Guillame Bibeau"];
+const users = ["Bob Smith", "Guillaume Bibeau"];
 
 export default (req: NowRequest, res: NowResponse) => {
   const { id } = req.query;
@@ -113,8 +113,8 @@ The Vercel CLI will proceed to build all the necessary Serverless Functions bund
 
 Getting an API project started with Vercel Serverless functions is convenient and really fast. Here are some takeaways:
 
-- Vercel takes zero configurations and is able to run your project
-- You can start using typescript, javascript or any supported languages
-- the repo code is here [Github](https://github.com/gbibeaul/vercel-api-starter/tree/master)
+- Vercel takes zero configurations and is able to run your project.
+- You can start using Typescript, Javascript or any supported languages.
+- The repo code is here [Github](https://github.com/gbibeaul/vercel-api-starter/tree/master).
 
 Send any questions or comments at g.bibeaulaviolette@gmail.com!

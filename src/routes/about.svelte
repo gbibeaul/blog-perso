@@ -41,11 +41,11 @@
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<h1>I am a Devops and Web developer with a weird mix of passions!</h1>
+<h1>I am a DevOps and Web developer with a weird mix of passions!</h1>
 
 <p>
   My goal is to help people get starting with the simplest and most cost
-  effective setups for their projects!
+  -effective setups for their projects!
 </p>
 <br />
 
