@@ -66,7 +66,7 @@
 <h1>Recent articles</h1>
 
 <figure>
-  <figcaption>The most recent trends in web Devops practices!</figcaption>
+  <figcaption>The most recent trends in Web Devops practices!</figcaption>
 </figure>
 
 <main class="articlesContent">
