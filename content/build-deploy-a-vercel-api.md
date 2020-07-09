@@ -13,7 +13,7 @@ image: "images/paulo-victor-lJ37JsyEJP0-unsplash.jpg"
 
 ### **Vercel Serverless Functions**
 
-[Vercel](https://vercel.com/), the company behind [Next.js](https://nextjs.org/) and the [SWR fetching library](https://github.com/vercel/swr), has a nice serverless offering. They recently came out with 0 configuration deployments. These deployments open the door to really fast project setup and deployments. Today in this first tutorial we will cover how to set up a Typescript REST API using Vercel Serverless Functions with minimal overhead.
+[Vercel](https://vercel.com/), the company behind [Next.js](https://nextjs.org/) and the [SWR fetching library](https://github.com/vercel/swr), has a nice serverless offering. They recently came out with zero configuration deployments. These deployments open the door to really fast project setup and deployments. Today in this first tutorial we will cover how to set up a Typescript REST API using Vercel Serverless Functions with minimal overhead.
 
 ### **Setting up**
 
@@ -113,7 +113,7 @@ The Vercel CLI will proceed to build all the necessary Serverless Functions bund
 
 Getting an API project started with Vercel Serverless functions is convenient and really fast. Here are some takeaways:
 
-- Vercel takes 0 configurations and is able to run your project
+- Vercel takes zero configurations and is able to run your project
 - You can start using typescript, javascript or any supported languages
 - the repo code is here [Github](https://github.com/gbibeaul/vercel-api-starter/tree/master)
 
