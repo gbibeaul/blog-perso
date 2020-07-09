@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About</title>
+  <title>About Frontend Devops</title>
 </svelte:head>
 
 <h1>About this site</h1>
