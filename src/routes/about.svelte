@@ -44,8 +44,8 @@
 <h1>I am a DevOps and Web developer with a weird mix of passions!</h1>
 
 <p>
-  My goal is to help people get started with the simplest and most cost
-  -effective setups for their projects!
+  My goal is to help people get started with the simplest and most
+  cost-effective setups for their projects!
 </p>
 <br />
 
