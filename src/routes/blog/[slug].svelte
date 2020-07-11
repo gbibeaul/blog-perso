@@ -14,6 +14,7 @@
 </script>
 
 <script>
+  import SocialShare from "../../components/SocialShare.svelte";
   export let post;
 </script>
 
@@ -54,11 +55,16 @@
   <title>{post.title}</title>
   <meta name="description" content={post.title} />
   <meta name="keywords" content={post.tags.toString()} />
+  <meta
+    property="og:url"
+    content={`https://frontend-devops.com/${post.image}`} />
   <meta name="author" content="Guillaume Bibeau-Laviolette" />
 </svelte:head>
 
 <h1>{post.title}</h1>
-
+<SocialShare
+  url={`https://frontend-devops.com/blog/${post.slug}`}
+  title={post.title} />
 <div class="content">
   {@html post.html}
 </div>

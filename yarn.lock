@@ -1985,6 +1985,11 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
+svelte-share-buttons-component@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/svelte-share-buttons-component/-/svelte-share-buttons-component-1.2.0.tgz#3fdc018e67ec20ace46a5c2f6c4c478ac19a0afc"
+  integrity sha512-V9VgsH3rzQRHvhCfvLStdjqMXgUBD4Mo4yh+g0JU3A5ERoG7FDY1RjgDMjSNQx/xCqCOY8U4jnXv5qTFb4jFIw==
+
 svelte@^3.0.0:
   version "3.24.0"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.24.0.tgz#6565a42c9705796fa66c6abb4fedc09f4323a4a8"
