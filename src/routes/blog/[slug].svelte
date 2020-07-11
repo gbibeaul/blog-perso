@@ -52,6 +52,9 @@
 
 <svelte:head>
   <title>{post.title}</title>
+  <meta name="description" content={post.title} />
+  <meta name="keywords" content={post.tags.toString()} />
+  <meta name="author" content="Guillaume Bibeau-Laviolette" />
 </svelte:head>
 
 <h1>{post.title}</h1>
