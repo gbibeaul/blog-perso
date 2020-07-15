@@ -12,6 +12,10 @@
     
     <url>
         <loc>https://www.frontend-devops.com/blog/build-deploy-a-vercel-api</loc>
-    </url>    
+    </url> 
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/setup-express-api-aws-lambda</loc>
+    </url>      
     
     </urlset>
