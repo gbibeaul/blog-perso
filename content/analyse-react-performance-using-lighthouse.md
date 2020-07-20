@@ -1,7 +1,7 @@
 ---
 slug: analyse-react-performance-using-lighthouse
 title: Automate website performance reports with Github Actions
-caption: Never have a low SEO score again!
+caption: Automated Lighthouse reports for better SEO rankings.
 date: "July 19th, 2020"
 tags: ["Github", "SEO", "CI/CD"]
 image: "images/casey-horner-fUlDLRuXt9U-unsplash.jpg"
