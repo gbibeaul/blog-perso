@@ -9,7 +9,7 @@ image: "images/casey-horner-fUlDLRuXt9U-unsplash.jpg"
 
 #### **Never have a low SEO score again!**
 
-![Lighthouse image](images/dan-meyers-YTvAi5nRWdc-unsplash.jpg)
+![snowy image](images/dan-meyers-YTvAi5nRWdc-unsplash.jpg)
 
 ### **The importance of SEO**
 
@@ -20,11 +20,13 @@ Search Engine Optimization is important for anybody wishing to make their mark o
 - Best Practices
 - SEO
 
-The easiest way to see how your website is currently doing is by [opening the Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open). Inside the DevTools, navigating to the Lighthouse tab will give you access to generating a report. This is conveniant to get a good understanding of where you stand. However, keeping a high score can be demanding as websites and projects grow in scale. This is where an automated report everytime you open a pull request can help.
+![Lighthouse report image](images/lighthouse.png)
+
+The easiest way to see how your website is currently doing is by [opening the Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/open). Inside the DevTools, navigating to the Lighthouse tab will give you access to generating a report. This is convenient to get a good understanding of where you stand. However, keeping a high score can be demanding as websites and projects grow in scale. This is where having an automated report everytime you open a pull request can help.
 
 ### **Lighthouse CI**
 
-Luckily for us, we can use the a combination of [GitHub Actions](https://github.com/features/actions) and the [Lighthouse CI CLI](https://www.npmjs.com/package/@lhci/cli) to automate our reports. Let's try it on a svelte application:
+Luckily for us, we can use the a combination of [GitHub Actions](https://github.com/features/actions) and the [Lighthouse CI CLI](https://www.npmjs.com/package/@lhci/cli) to automate our reports. Let's try it on a Svelte application:
 
 ```bash
 npx degit sveltejs/template svelte-app
@@ -33,7 +35,7 @@ yarn add @lhci/cli@0.4.x --dev
 yarn install
 ```
 
-This will generate a minimalist project using the [Svelte Framework](https://svelte.dev/) and instal locally the Lighthouse CI CLI. Once done, navigate to the project and create the GitHub Action file:
+This will generate a minimalist project using the [Svelte Framework](https://svelte.dev/) and install locally the Lighthouse CI CLI. Once done, navigate to the project and create the GitHub Action file:
 
 ```bash
 git init
@@ -79,9 +81,9 @@ module.exports = {
 };
 ```
 
-This file is where most of the action happens. Under the assert section of the configuration, you are able to set the behavior of the GitHub action. In this example we will set a minimum score of 90%, forcing anything under that to result in an error and failing our GitHub action. A value of 90% represents a good target since it means you achieved top performance in all categories. However it might be hard to reach these minimums in a production application.
+This file is where most of the action happens. Under the assert section of the configuration, you are able to set the behavior of the GitHub action. In this example, we will set a minimum score of 90%, forcing anything under that to result in an error and failing our GitHub action. A value of 90% represents a good target since it means you achieved top performance in all categories. However, it might be hard to reach the threshold values defined above in a production application.
 
-Finally, modify the package json to have our new scripts:
+Finally, modify the `package.json` to have our new scripts:
 
 ```json
 {
@@ -113,6 +115,6 @@ Once you proceed and [upload this repo to GitHub](https://docs.github.com/en/git
 
 ### **Conclusion**
 
-- Understanding performance in regards to SEO is crucial
-- Having frequent checks and automated reports can help keeping a good score
+- Understanding performance in regards to SEO is crucial.
+- Having frequent checks and automated reports can help in keeping a good score.
 - Automating small tasks around projects does not have to be complicated!
