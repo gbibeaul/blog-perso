@@ -17,5 +17,9 @@
     <url>
         <loc>https://www.frontend-devops.com/blog/setup-express-api-aws-lambda</loc>
     </url>      
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/analyse-react-performance-using-lighthouse</loc>
+    </url>    
     
     </urlset>
