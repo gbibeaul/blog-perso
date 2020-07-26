@@ -20,6 +20,10 @@
 
     <url>
         <loc>https://www.frontend-devops.com/blog/analyse-react-performance-using-lighthouse</loc>
+    </url> 
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/pipe-serverside-props-in-nextjs</loc>
     </url>    
     
     </urlset>
