@@ -1,5 +1,6 @@
 ---
 slug: build-deploy-a-vercel-api
+category: next-vercel
 title: How to build and deploy a Node API on Vercel Serverless functions
 caption: Learn the easiest API deployment in town...
 date: "July 9th, 2020"
