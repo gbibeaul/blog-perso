@@ -20,7 +20,7 @@ However, if you don't have the time or ressources for such a big migration, you 
 
 ### **Example Repo**
 
-For the purpose of this post, we will be using an application built by [Nathalie Bennaroch](https://twitter.com/Nathalieben26) for her final project as a Web Development bootcamp student. This application follow the typical MERN architecture with a Front-End in React and a Express/Mongo Back-End. Since our goal is to host this app we will not focus on features or potential bugs but it is good to have a general idea of how the code works so please have a look at the [original repository](https://github.com/lavilabs/adapting-express-to-next/tree/original) to explore a bit the structure.
+For the purpose of this post, we will be using an application built by [Nathalie Benarroch](https://twitter.com/Nathalieben26) for her final project as a Web Development bootcamp student. This application follow the typical MERN architecture with a Front-End in React and a Express/Mongo Back-End. Since our goal is to host this app we will not focus on features or potential bugs but it is good to have a general idea of how the code works so please have a look at the [original repository](https://github.com/lavilabs/adapting-express-to-next/tree/original) to explore a bit the structure.
 
 ### **Setting up**
 
