@@ -5,6 +5,8 @@
   export let tags;
   export let image;
   export let slug;
+
+  console.log(slug);
 </script>
 
 <style>
