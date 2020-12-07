@@ -14,7 +14,7 @@ image: "images/pawel-czerwinski-Lki74Jj7H-U-unsplash.jpg"
 
 ### **Why host MERN apps on vercel?**
 
-The MERN stack is at a crossroads: it is still a hugely popular stack behind a lot of production applications but it's popularity is being attacked by the Jamstack. Sometimes it makes sens to refactor an application to migrate it to a framework like Next.js or Gastby but that can be a huge task.
+The MERN stack is at a crossroads: it is still a hugely popular stack behind a lot of production applications but it's popularity is being attacked by the Jamstack. Sometimes it makes sense to refactor an application to migrate it to a framework like Next.js or Gastby but that can be a huge task.
 
 However, if you don't have the time or ressources for such a big migration, you can still get a lot of benefits like preview deployments and serverless functions if you host your MERN app on Vercel. In this tutorial, we will show you how to adapt such an application to be hosted on Vercel's Cloud. This tutorial assumes a intermediate level of understanding and aims at giving an idea of how the process works.
 
@@ -48,7 +48,7 @@ You should now be able to run the application for a first time by calling the st
 yarn start
 ```
 
-You will be prompted to create a new prohect. Here you can accept the default settings as Vercel is able to detect that this is a create-react-app repo. The good news is that now we have our Front-End running locally and deployable to Vercel.
+You will be prompted to create a new project. Here you can accept the default settings as Vercel is able to detect that this is a create-react-app repo. The good news is that now we have our Front-End running locally and deployable to Vercel.
 
 ### **Setting up environment variables**
 
@@ -62,7 +62,7 @@ AUTH_ZERO_DOMAIN
 AUTH_ZERO_CLIENT_ID
 ```
 
-Luckilly, Vercel offers a way to set environment variables and protect them nicely. As always, treat all your environment variables with care and avoid having them commited in source code. Instead we can use the Vercel CLI command to have them directly passed to our hosted application:
+Luckily, Vercel offers a way to set environment variables and protect them nicely. As always, treat all your environment variables with care and avoid having them committed in source code. Instead we can use the Vercel CLI command to have them directly passed to our hosted application:
 
 ```bash
 vercel secrets add [secret-name] [secret-value]
