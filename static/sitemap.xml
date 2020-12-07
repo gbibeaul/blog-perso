@@ -27,6 +27,10 @@
 
     <url>
         <loc>https://www.frontend-devops.com/blog/pipe-serverside-props-in-nextjs</loc>
+    </url>
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/mern-on-vercel</loc>
     </url>    
     
     </urlset>
