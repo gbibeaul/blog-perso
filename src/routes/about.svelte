@@ -34,6 +34,10 @@
     justify-content: flex-start;
     margin-bottom: 12px;
   }
+
+  .socials-container {
+    display: flex;
+  }
 </style>
 
 <svelte:head>
@@ -51,18 +55,24 @@
 </p>
 <br />
 
-<h2><b>Guillaume</b></h2>
-<address class="socials">
-  <a href="https://github.com/gbibeaul" class="fa fa-github" />
-  <a
-  href="https://twitter.com/BibeauGuillaume"
-  class="fa fa-twitter" />
-</address>
+<section class="socials-container">
+  <div class="person-container">
+    <h2><b>Guillaume</b></h2>
+    <address class="socials">
+      <a href="https://github.com/gbibeaul" class="fa fa-github" />
+      <a
+      href="https://twitter.com/BibeauGuillaume"
+      class="fa fa-twitter" />
+    </address>
+  </div>
 
-<h2><b>QJ</b></h2>
-<address class="socials">
-  <a href="https://github.com/qjimmy" class="fa fa-github" />
-  <a
-    href="https://twitter.com/qjnguyen"
-    class="fa fa-twitter" />
-</address>
+  <div class=person-container>
+        <h2><b>QJ</b></h2>
+        <address class="socials">
+        <a href="https://github.com/qjimmy" class="fa fa-github" />
+        <a
+          href="https://twitter.com/qjnguyen"
+          class="fa fa-twitter" />
+    </address>
+  </div>
+</section>
