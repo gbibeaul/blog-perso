@@ -86,9 +86,11 @@ The Next.js <code> &lt;Image /&gt;</code> requires the `height` and `width` attr
 
 However, keep in mind, using the `height` and `width` attribute does not mean the image will not be responsive. It will keep the same aspect ratio according to the provided `height` and `width` prop values. <strong>Make sure to prefix your `src` prop with a `/` or it will not interpret your image from the `public/` folder!</strong>
 
+Now take a look at your application and there you have it! Your image is now in a WebP format and it lazy loads.
+
 ## **What About Images From External Sources?**
 
-Now let's see how this Next.js <code> &lt;Image /&gt;</code> component behaves when I pass in an external image from <a href="https://picsum.photos/">https://picsum.photos/</a>. I will use the following `src` value: `https://picsum.photos/200/300`.
+Now let's see how this Next.js <code> &lt;Image /&gt;</code> component behaves when I pass in an external image source that comes from <a href="https://picsum.photos/">https://picsum.photos/</a>. I will use the following `src` value: `https://picsum.photos/200/300`.
 
 My `/pages/index.js` file now looks like the following:
 
@@ -148,3 +150,7 @@ Let's have a look at the specific performance features Vercel promised us. I wil
 ![app-analysis](images/nextjs-image/app-analysis.webp)
 
 Amazing! Our image was indeed converted to the WebP format and the image is only roughly 13kB! Furthermore, lazy loading is also present, although it will be not demonstrated for the sake of keeping this article concise.
+
+## **About Me**
+
+My name is QJ and I am a software engineer from Montreal, Canada. I work mainly as a fullstack web developer, but I am also passionate about other subjects. If you found this article useful, you can support me by following me on <a href="https://github.com/qjimmy">Github <strong>(@qjimmy)</strong></a> and <a href="https://twitter.com/qjnguyen">Twitter <strong>(@qjnguyen)</strong></a>. Please also consider sharing this article with anyone who might need it!
