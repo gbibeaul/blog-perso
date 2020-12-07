@@ -23,15 +23,16 @@
   }
 
   /* Twitter */
-  .fa-linkedin {
-    background: #007bb5;
+  .fa-twitter {
+    background: rgb(29, 161, 242);
     color: white;
     margin-right: 10px;
   }
 
   .socials {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 12px;
   }
 </style>
 
@@ -41,19 +42,27 @@
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<h2>I am a DevOps and Web developer with a weird mix of passions!</h2>
+<h2>We are the people behind <a target="_blank" href="https://lavilabs.io/">Lavi Labs Inc.</a>, a Web Agency dedicated to helping people with all their DevOps and Web Development needs.</h2>
 
 <p>
-  My goal is to help people get started with the simplest and most
-  cost-effective setups for their projects! Most tutorials and posts here will
-  go straight to the point and are meant to give quick simple solutions to
-  common problems developers are facing everyday!
+  Our goal with this blog  is to help people get started with the simplest and most cost-effective setups for their projects! 
+  Most tutorials and posts here will go straight to the point
+  and are meant to give quick simple solutions to common problems developers are facing everyday!
 </p>
 <br />
 
+<h2><b>Guillaume</b></h2>
 <address class="socials">
-  <a
-    href="https://www.linkedin.com/in/guillaume-bibeau-laviolette/"
-    class="fa fa-linkedin" />
   <a href="https://github.com/gbibeaul" class="fa fa-github" />
+  <a
+  href="https://twitter.com/BibeauGuillaume"
+  class="fa fa-twitter" />
+</address>
+
+<h2><b>QJ</b></h2>
+<address class="socials">
+  <a href="https://github.com/qjimmy" class="fa fa-github" />
+  <a
+    href="https://twitter.com/qjnguyen"
+    class="fa fa-twitter" />
 </address>
