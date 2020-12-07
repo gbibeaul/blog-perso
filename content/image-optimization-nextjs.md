@@ -3,7 +3,7 @@ slug: image-optimization-nextjs
 category: next-vercel
 title: Optimize Your Images With The New Component From Next.js
 caption: Get busy engineering features without worrying about the performance of your images
-date: 'December 13th, 2020'
+date: 'December 14th, 2020'
 tags: ['Vercel', 'Image', 'SEO']
 image: 'images/claus-pescha-gF7l9cOBPgk-unsplash.jpg'
 ---
