@@ -32,5 +32,9 @@
     <url>
         <loc>https://www.frontend-devops.com/blog/mern-on-vercel</loc>
     </url>    
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
+    </url>    
     
     </urlset>
