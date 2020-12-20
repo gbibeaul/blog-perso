@@ -81,7 +81,7 @@ class handler(BaseHTTPRequestHandler):
 
 Run your project using:
 
-```
+```sh
 yarn start
 ```
 
@@ -117,7 +117,7 @@ Navigating to http://localhost:3000/api will now give you a random number betwee
 
 The main advantages of this is just how simple the toolset is. In order to deploy our new dice roll api all we have to do is call vercel like this:
 
-```bash
+```sh
 yarn deploy
 ```
 
