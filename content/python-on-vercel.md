@@ -137,4 +137,4 @@ Getting an API project started with Vercel Serverless functions is convenient an
 - You can start using the Python data stack with ease without having to manage a python instalation
 - A Javascript toolset for Python is not completly crazy.
 
-(@BibeauGuillaume)[https://twitter.com/BibeauGuillaume] on Twitter for any questions!
+[@BibeauGuillaume](https://twitter.com/BibeauGuillaume) on Twitter for any questions!
