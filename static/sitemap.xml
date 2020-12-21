@@ -3,12 +3,15 @@
     <url>
         <loc>https://www.frontend-devops.com</loc>
     </url>
+    
     <url>
         <loc>https://www.frontend-devops.com/about</loc>
     </url>
+
     <url>
         <loc>https://www.frontend-devops.com/tutorials</loc>
     </url>
+
     <url>
         <loc>https://www.frontend-devops.com/blog</loc>
     </url>
@@ -35,6 +38,10 @@
 
     <url>
         <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
-    </url>    
+    </url> 
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
+    </url>      
     
     </urlset>
