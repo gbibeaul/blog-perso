@@ -2004,6 +2004,11 @@ supports-color@^7.0.0:
   dependencies:
     has-flag "^4.0.0"
 
+svelte-intersection-observer@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/svelte-intersection-observer/-/svelte-intersection-observer-0.4.0.tgz#c43d3a6967d2fe9892589e4d222b1a6617397c82"
+  integrity sha512-IelHBniABllWF6jQY2cOn2TsUENpErja520ZtkC7Cn/tvxUrP8TLQMarc9z4uMOl8MW406vSoqt1Z19iXbHo/w==
+
 svelte-share-buttons-component@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/svelte-share-buttons-component/-/svelte-share-buttons-component-1.2.0.tgz#3fdc018e67ec20ace46a5c2f6c4c478ac19a0afc"
