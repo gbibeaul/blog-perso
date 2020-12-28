@@ -28,7 +28,7 @@ hr {
 }
 </style>
 
-#### **No documentation? I'm about to change this!**
+#### **No documentation? I got you covered 😼**
 
 ![main](images/kristaps-ungurs-pBNtBUDNHBw-unsplash.jpg)
 <em>Photo by <a href="https://unsplash.com/@kristapsungurs">Kristaps Ungurs</a></em>
