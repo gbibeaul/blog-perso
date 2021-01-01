@@ -11,7 +11,7 @@
   @import url("https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700");
 
   :root {
-    --color: #3c3163;
+    --color: #21138;
     --transition-time: 0.5s;
   }
 
