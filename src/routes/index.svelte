@@ -9,8 +9,21 @@
 </script>
 
 <script>
+  import IntersectionObserver from "../components/InterserctionObserver.svelte";
   import BlogCard from "../components/BlogCard.svelte";
+
   export let posts;
+
+  let currentlyShownPosts = posts.slice(0, 2);
+
+  let element;
+  let intersecting;
+  let lastLoadedIndex = 2;
+
+  $: if (intersecting) {
+    lastLoadedIndex = lastLoadedIndex + 2;
+    currentlyShownPosts = posts.slice(0, lastLoadedIndex);
+  }
 </script>
 
 <style>
@@ -77,7 +90,16 @@
 </figure>
 
 <main class="articlesContent">
-  {#each posts as post}
+
+  {#each currentlyShownPosts as post}
     <BlogCard {...post} />
   {/each}
+
 </main>
+<IntersectionObserver {element} bind:intersecting>
+  <div bind:this={element}>
+    {#if intersecting && currentlyShownPosts.length !== posts.length}
+      Loading...
+    {/if}
+  </div>
+</IntersectionObserver>

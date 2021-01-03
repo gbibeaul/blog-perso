@@ -38,10 +38,14 @@
 
     <url>
         <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
-    </url> 
+    </url>
 
     <url>
-        <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
+        <loc>https://www.frontend-devops.com/blog/python-on-vercel>
+    </url>    
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/gcp-vercel-integration</loc>
     </url>      
 
     <url>
