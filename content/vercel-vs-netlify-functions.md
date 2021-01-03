@@ -3,7 +3,7 @@ slug: vercel-vs-netlify-functions
 category: next-vercel
 title: What is the best developer cloud for your serverless functions.
 caption: Taking developer experience to the next level.
-date: "Monday 4th, 2021"
+date: "Monday January 4th, 2021"
 tags: ["Vercel", "Netlify", "Serverless"]
 image: "images/vercel-vs-netlify-functions/philip-graves-5nhuw-QHdkw-unsplash.jpg"
 ---
