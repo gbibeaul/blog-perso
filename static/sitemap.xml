@@ -47,5 +47,9 @@
     <url>
         <loc>https://www.frontend-devops.com/blog/gcp-vercel-integration</loc>
     </url>      
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/vercel-vs-netlify-functions</loc>
+    </url>   
     
     </urlset>
