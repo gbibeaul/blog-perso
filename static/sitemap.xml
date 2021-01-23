@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://www.frontend-devops.com</loc>
     </url>
-    
+
     <url>
         <loc>https://www.frontend-devops.com/about</loc>
     </url>
@@ -15,18 +15,18 @@
     <url>
         <loc>https://www.frontend-devops.com/blog</loc>
     </url>
-    
+
     <url>
         <loc>https://www.frontend-devops.com/blog/build-deploy-a-vercel-api</loc>
-    </url> 
+    </url>
 
     <url>
         <loc>https://www.frontend-devops.com/blog/setup-express-api-aws-lambda</loc>
-    </url>      
+    </url>
 
     <url>
         <loc>https://www.frontend-devops.com/blog/analyse-react-performance-using-lighthouse</loc>
-    </url> 
+    </url>
 
     <url>
         <loc>https://www.frontend-devops.com/blog/pipe-serverside-props-in-nextjs</loc>
@@ -34,22 +34,26 @@
 
     <url>
         <loc>https://www.frontend-devops.com/blog/mern-on-vercel</loc>
-    </url>    
+    </url>
 
     <url>
         <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
     </url>
 
     <url>
-        <loc>https://www.frontend-devops.com/blog/python-on-vercel>
-    </url>    
+        <loc>https://www.frontend-devops.com/blog/python-on-vercel></loc>
+    </url>
 
     <url>
         <loc>https://www.frontend-devops.com/blog/gcp-vercel-integration</loc>
-    </url>      
+    </url>
 
     <url>
         <loc>https://www.frontend-devops.com/blog/vercel-vs-netlify-functions</loc>
-    </url>   
-    
-    </urlset>
+    </url>
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/build-a-vercel-monorepo</loc>
+    </url>
+
+</urlset>

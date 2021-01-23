@@ -8,13 +8,13 @@ tags: ["Vercel", "Netlify", "Serverless"]
 image: "images/vercel-vs-netlify-functions/philip-graves-5nhuw-QHdkw-unsplash.jpg"
 ---
 
-#### **What is the best developer cloud for your serverless functions.**
+#### **What is the best developer cloud for your serverless functions?**
 
 ![Abstract image](images/vercel-vs-netlify-functions/philip-graves-5nhuw-QHdkw-unsplash.jpg)
 
 AWS Lambda was introduced over 6 years ago in November 2014. In the fast moving world of cloud computing Lambda is now considered a mature service! There are countless runtimes available and Lambda integrates with a plethora of AWS services. Since it's inception, Lambda has proven it's worth and remains the king of low cost cloud computing. One area where it does not shine however is on the developer experience.
 
-It takes even for senior developers a fare amount of reading to setup even a simple CI/CD pipeline to deploy Lambda applications. Great tooling like the [Serverless Framework](https://www.serverless.com/) and [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification.html) exist but in the last few years we have seen the rise of Developer clouds like [Vercel](https://vercel.com/l) and [Netlify](https://www.netlify.com/). Those clouds aim to provide with a complete platform over AWS Lambda. In this post we will analyse their offering and see how they adapt to common application scenarios.
+It takes even for senior developers a fare amount of reading to setup even a simple CI/CD pipeline to deploy Lambda applications. Great tooling like the [Serverless Framework](https://www.serverless.com/) and [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification.html) exist but in the last few years we have seen the rise of developer clouds like [Vercel](https://vercel.com/l) and [Netlify](https://www.netlify.com/). Those clouds aim to provide with a complete platform over AWS Lambda. In this post we will analyse their offering and see how they adapt to common application scenarios.
 
 ## Setting up
 
