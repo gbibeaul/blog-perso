@@ -30,7 +30,7 @@ The reality however was that managing a monorepo is in itself a rare expertise t
 Since a monorepo contains a multitude of application, we will be starting from a prebuilt base that I pushed to [this repo](https://github.com/gbibeaul/vercel-monorepo). We will need the following tools in order to connect our monorepo to Vercel:
 
 - **Authenticated Vercel CLI:** You can download it [here](https://vercel.com/download) and login like shown [here](https://vercel.com/docs/cli#commands/login).
-- **Yarn to use workspacs:** You can download it like shown [here](https://yarnpkg.com/getting-started/install).
+- **Yarn to use workspaces:** You can download it like shown [here](https://yarnpkg.com/getting-started/install).
 
 Once this is done, you can go ahead and clone the repo on your computer or you can fork it. After this is done, we will do the following steps which will be explained in more details down below:
 
@@ -69,7 +69,7 @@ This will be a really similar process. Vercel is good at identifying each framew
 <hr />
 <br />
 
-### **Sharing code between pacakges**
+### **Sharing code between packages**
 
 Once we have connected all our applications to Vercel, we will have a look at the different scripts and how to manage each app with Yarn workspaces. The first thing to note is that a workspace does not have to be a full app! It can be easily a small Javascript module that you want to share between applications! In our monorepo example, we are making a Theme package available to other workspaces under `packages/theme`. You can use this package by installing it to another workspace like this:
 
