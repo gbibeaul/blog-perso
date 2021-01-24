@@ -30,7 +30,7 @@ The reality however was that managing a monorepo is in itself a rare expertise t
 Since a monorepo contains a multitude of application, we will be starting from a prebuilt base that I pushed to [this repo](https://github.com/gbibeaul/vercel-monorepo). We will need the following tools in order to connect our monorepo to Vercel:
 
 - **Authenticated Vercel CLI:** You can download it [here](https://vercel.com/download) and login like shown [here](https://vercel.com/docs/cli#commands/login).
-- **Yarn to use workspacs:** You can download it like shown [here](https://yarnpkg.com/getting-started/install).
+- **Yarn to use workspaces:** You can download it like shown [here](https://yarnpkg.com/getting-started/install).
 
 Once this is done, you can go ahead and clone the repo on your computer or you can fork it. After this is done, we will do the following steps which will be explained in more details down below:
 
