@@ -53,7 +53,7 @@ Vercel treats each workspace as a different project. This is useful, because eac
 cd packages/functions/
 vercel
 ```
-This will trigger a couple of questions accepting the default will mostly work here. Once this is done, we can head over to the Vercel dashboard and see our newly deployed project.
+This will trigger a couple of questions, accepting the default will mostly work here. Once this is done, we can head over to the Vercel dashboard and see our newly deployed project.
 
 ![Vercel dashboard image](images/build-a-vercel-monorepo/Screenshot_2021-01-23.png)
 
