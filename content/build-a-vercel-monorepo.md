@@ -69,7 +69,7 @@ This will be a really similar process. Vercel is good at identifying each framew
 <hr />
 <br />
 
-### **Sharing code between pacakges**
+### **Sharing code between packages**
 
 Once we have connected all our applications to Vercel, we will have a look at the different scripts and how to manage each app with Yarn workspaces. The first thing to note is that a workspace does not have to be a full app! It can be easily a small Javascript module that you want to share between applications! In our monorepo example, we are making a Theme package available to other workspaces under `packages/theme`. You can use this package by installing it to another workspace like this:
 
