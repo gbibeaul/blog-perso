@@ -9,8 +9,9 @@
 </script>
 
 <script>
-  import IntersectionObserver from "../components/InterserctionObserver.svelte";
+  import Head from "../components/head.svelte";
   import BlogCard from "../components/BlogCard.svelte";
+  import IntersectionObserver from "../components/InterserctionObserver.svelte";
 
   export let posts;
 
@@ -19,11 +20,15 @@
   let element;
   let intersecting;
   let lastLoadedIndex = 2;
+  let searchInput = "";
 
   $: if (intersecting) {
     lastLoadedIndex = lastLoadedIndex + 2;
     currentlyShownPosts = posts.slice(0, lastLoadedIndex);
   }
+
+  $: console.log(searchInput)
+  
 </script>
 
 <style>
@@ -32,28 +37,23 @@
     text-align: center;
     margin: 0 auto;
   }
-
   h1 {
     font-size: 2.8em;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0.5em 0;
   }
-
   figure {
     margin: 0 0 2em 0;
   }
-
   p {
     margin: 1em auto;
   }
-
   @media (min-width: 480px) {
     h1 {
       font-size: 4em;
     }
   }
-
   .articlesContent {
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +64,6 @@
       justify-content: center;
     }
   }
-
   @media only screen and (min-width: 600px) {
     .articlesContent {
       justify-content: space-between;
@@ -72,16 +71,7 @@
   }
 </style>
 
-<svelte:head>
-  <title>Frontend Devops</title>
-  <meta
-    name="description"
-    content="Tutorials on the latest trend in DevOps for Web Development" />
-  <meta
-    name="keywords"
-    content="HTML, Vercel, JavaScript, GraphQL, Typescript, DevOps, CI/CD" />
-  <meta name="author" content="Guillaume Bibeau-Laviolette" />
-</svelte:head>
+<Head />
 
 <h1>Recent articles</h1>
 
@@ -89,6 +79,8 @@
   <figcaption>The most recent trends in Web Devops practices!</figcaption>
 </figure>
 
+<input type="text" bind:value={searchInput} />
+{searchInput}
 <main class="articlesContent">
 
   {#each currentlyShownPosts as post}

@@ -1,3 +1,7 @@
+<script>
+  import Head from "../components/Head.svelte"
+</script>
+
 <style>
   /* Style all font awesome icons */
   .fa {
@@ -40,9 +44,8 @@
   }
 </style>
 
-<svelte:head>
-  <title>About Frontend Devops</title>
-</svelte:head>
+<Head/>
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />

@@ -17,6 +17,9 @@ export default {
 	client: {
 		input: config.client.input(),
 		output: config.client.output(),
+		watch: {
+			chokidar: false
+		},
 		plugins: [
 			replace({
 				'process.browser': true,
@@ -62,6 +65,9 @@ export default {
 	server: {
 		input: config.server.input(),
 		output: config.server.output(),
+		watch: {
+			chokidar: false
+		},
 		plugins: [
 			replace({
 				'process.browser': false,
