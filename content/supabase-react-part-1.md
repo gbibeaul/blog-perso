@@ -119,4 +119,104 @@ Ouf! This was a lot of code but we now have a really nice context that will be t
 
 ### Custom hooks
 
-Let's now create a `useUser` custom hook that will our users access to the authenticated
+Obviously a having a context means that we can now create a nice custom hooks to avoid repeating code! Let's create two new functions in our context files. The first one will be a hook to use Supabase directly inside a react component without having to setup the client.
+
+```ts
+export const useSupabase = () => {
+  const context = React.useContext(SupabaseContext);
+
+  if (context === undefined) {
+    throw new Error(
+      "useSupabase must be used within a SupabaseContext.Provider"
+    );
+  }
+
+  return context.sb;
+};
+```
+
+This hook will take care of consuming the SupabaseContext and will return directly the client. This pattern might have been familiar to you if you have used Apollo client. You can use it to easily get access to the Supabase client in your components like this:
+
+```ts
+const supabase = useSupabase();
+```
+
+While this provides for a great developer experience, we could probably use a similar hook for authentication! Let's add a new hook under the one we exported above:
+
+```ts
+export const useUser = () => {
+  const context = React.useContext(SupabaseContext);
+
+  if (context === undefined) {
+    throw new Error(
+      "useSupabase must be used within a SupabaseContext.Provider"
+    );
+  }
+
+  return context.user;
+};
+```
+
+This is mostly the same concept as useSupabase but will give you directly inside a react component access to your user. Although we could be doing this directly with the Supabase client this gives us a nice centralized abstraction! Let's see a super example of this coming together in a mini signup page!
+
+```ts
+import React from "react";
+import { useSupabase, useUser } from "./context/supabaseContext";
+
+const Signup = () => {
+  const supabase = useSupabase();
+  const user = useUser();
+
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
+  const handleRegister = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    await supabase.auth.signUp({ email, password });
+    await supabase.auth.signIn({ email, password });
+  };
+
+  if (user) {
+    return (
+      <div>
+        <h1>Hello {user.email}</h1>
+        <button onClick={() => supabase.auth.signOut()}>signout</button>
+      </div>
+    );
+  }
+
+  return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <form
+        style={{ display: "flex", flexDirection: "column" }}
+        onSubmit={handleRegister}
+      >
+        <h1>Register</h1>
+        email
+        <input
+          required
+          type="text"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+        />
+        password
+        <input
+          required
+          type="password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
+};
+
+export default Signup;
+```
+
+### Wrapping up!
+
+This post is meant to be a first exploration into the world of Supabase! This blog is all about simplifying operations. On this topic I think it's fair to say that Supabase passes this test with flying colors! I will gradually expand on this topic in a series of posts where we will talk about operations on Supabase!
+
+[@BibeauGuillaume](https://twitter.com/BibeauGuillaume) on Twitter for any questions!
