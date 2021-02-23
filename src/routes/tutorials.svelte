@@ -33,7 +33,6 @@
 
 <script>
   import BlogCard from "../components/BlogCard.svelte";
-  import Head from "../components/Head.svelte";
   export let vercelPosts;
   export let awsPosts;
   export let ciCdPosts;
