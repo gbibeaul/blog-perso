@@ -12,6 +12,8 @@ image: "images/daniel-mirlea-WGdliLPgMaA-unsplash.jpg"
 
 ![snowy image](images/daniel-mirlea-WGdliLPgMaA-unsplash.jpg)
 
+_Since this post I have published an [NPM package](https://www.npmjs.com/package/next-pipe-props) that pipe props for both static and server side props. This post explains the reasoning behind the package but using the package is easier than maintaining your own code!_
+
 ## **Jamstack mentality**
 
 The React and web development community has witnessed in recent years the rise in popularity of frameworks that embrace the [Jamstack](https://jamstack.org/) ideas.
