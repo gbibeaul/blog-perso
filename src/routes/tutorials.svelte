@@ -6,6 +6,7 @@
         const awsPosts = [];
         const vercelPosts = [];
         const ciCdPosts = [];
+        const reactPosts = [];
 
         posts.forEach(post => {
           switch (post.category) {
@@ -18,12 +19,14 @@
             case "aws":
               awsPosts.push(post);
               break;
+            case "react":
+              reactPosts.push(post);
             default:
               break;
           }
         });
 
-        return { awsPosts, vercelPosts, ciCdPosts };
+        return { awsPosts, vercelPosts, ciCdPosts, reactPosts };
       });
   }
 </script>
@@ -33,6 +36,7 @@
   export let vercelPosts;
   export let awsPosts;
   export let ciCdPosts;
+  export let reactPosts;
 </script>
 
 <style>
@@ -84,6 +88,7 @@
 </style>
 
 <svelte:head>
+  <Head />
   <title>Frontend Devops</title>
   <meta
     name="description"
@@ -132,5 +137,18 @@
 <main class="articlesContent">
   {#each ciCdPosts as ciCdPost}
     <BlogCard {...ciCdPost} />
+  {/each}
+</main>
+
+<figure>
+  <figcaption class="post-fig-container">
+    <h2>React</h2>
+    <h2>{`${reactPosts.length} posts`}</h2>
+  </figcaption>
+</figure>
+
+<main class="articlesContent">
+  {#each reactPosts as reactPost}
+    <BlogCard {...reactPost} />
   {/each}
 </main>
