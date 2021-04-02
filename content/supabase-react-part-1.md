@@ -3,7 +3,7 @@ slug: supabase-react-part-1
 category: react
 title: Let's use Supabase, the open-source Firebase alternative!
 caption: Back-end as a service has a new kid on the block!
-date: "Sunday February 47th, 2021"
+date: "February 27, 2021"
 tags: ["React", "Supabase", "Serverless"]
 image: "images/supabase-react-part-1/massimiliano-corradini-acswBJsecx8-unsplash.jpg"
 ---

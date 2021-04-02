@@ -3,7 +3,7 @@ slug: setup-express-api-aws-lambda
 category: aws
 title: Deploying an Express API easily on AWS Lambda
 caption: Get an express api up in 10 minutes
-date: "July 13th, 2020"
+date: "July 13, 2020"
 tags: ["AWS", "Serverless", "Express"]
 image: "images/jefferson-santos-V9sv7QrDUgc-unsplash.jpg"
 ---

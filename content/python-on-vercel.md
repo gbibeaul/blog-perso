@@ -3,7 +3,7 @@ slug: python-on-vercel
 category: next-vercel
 title: Using Vercel to host a Python API.
 caption: Sending the Python Data-Science Stack to production easily.
-date: "December 21th, 2020"
+date: "December 21, 2020"
 tags: ["Vercel", "Python", "Data-Science", "Pandas"]
 image: "images/python-on-vercel/shahadat-rahman-voM1Z9cGPCU-unsplash.jpg"
 ---
