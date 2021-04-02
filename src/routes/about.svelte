@@ -66,7 +66,7 @@
     </address>
   </div>
 
-  <div class=person-container>
+  <div class="person-container">
         <h2><b>QJ</b></h2>
         <address class="socials">
         <a href="https://github.com/qjimmy" class="fa fa-github" />
