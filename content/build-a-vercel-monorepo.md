@@ -3,7 +3,7 @@ slug: build-a-vercel-monorepo
 category: next-vercel
 title: How to Use Yarn Workspaces to Build a Vercel Monorepo
 caption: Simplify how you manage your repos!
-date: "January 22nd, 2021"
+date: "January 22, 2021"
 tags: ["Vercel", "Typescript", "Node", "Python"]
 image: "images/build-a-vercel-monorepo/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg"
 ---

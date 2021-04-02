@@ -1,16 +1,15 @@
 <script context="module">
-  export function preload({ params, query }) {
-    return this.fetch(`blog.json`)
-      .then(r => r.json())
-      .then(posts => {
-        return { posts };
-      });
+  export async function preload() {
+    const response = await this.fetch("blog.json")
+    const postsData = await response.json()
+    const posts = postsData.sort((a,b) => new Date(b.date) - new Date(a.date))
+    
+    return  { posts }
   }
 </script>
 
 <script>
-  import IntersectionObserver from "../components/InterserctionObserver.svelte";
-  import BlogCard from "../components/BlogCard.svelte";
+  import { IntersectionObserver, BlogCard, Hero } from '../components'
 
   export let posts;
 
@@ -26,32 +25,39 @@
   }
 </script>
 
+<svelte:head>
+  <title>Frontend Devops</title>
+  <meta
+    name="description"
+    content="Tutorials on the latest trend in DevOps for Web Development" />
+  <meta
+    name="keywords"
+    content="HTML, Vercel, JavaScript, GraphQL, Typescript, DevOps, CI/CD" />
+  <meta name="author" content="Guillaume Bibeau-Laviolette" />
+</svelte:head>
+
+<Hero />
+
+<main class="articlesContent">
+
+  {#each currentlyShownPosts as post}
+    <BlogCard {...post} />
+  {/each}
+
+</main>
+<IntersectionObserver {element} bind:intersecting>
+  <div bind:this={element}>
+    {#if intersecting && currentlyShownPosts.length !== posts.length}
+      Loading...
+    {/if}
+  </div>
+</IntersectionObserver>
+
+
 <style>
-  h1,
-  figure {
-    text-align: center;
-    margin: 0 auto;
-  }
 
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 2em 0;
-  }
-
-  p {
+p {
     margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
   }
 
   .articlesContent {
@@ -71,35 +77,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Frontend Devops</title>
-  <meta
-    name="description"
-    content="Tutorials on the latest trend in DevOps for Web Development" />
-  <meta
-    name="keywords"
-    content="HTML, Vercel, JavaScript, GraphQL, Typescript, DevOps, CI/CD" />
-  <meta name="author" content="Guillaume Bibeau-Laviolette" />
-</svelte:head>
-
-<h1>Recent articles</h1>
-
-<figure>
-  <figcaption>The most recent trends in Web Devops practices!</figcaption>
-</figure>
-
-<main class="articlesContent">
-
-  {#each currentlyShownPosts as post}
-    <BlogCard {...post} />
-  {/each}
-
-</main>
-<IntersectionObserver {element} bind:intersecting>
-  <div bind:this={element}>
-    {#if intersecting && currentlyShownPosts.length !== posts.length}
-      Loading...
-    {/if}
-  </div>
-</IntersectionObserver>

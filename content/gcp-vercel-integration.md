@@ -3,7 +3,7 @@ slug: gcp-vercel-integration
 category: next-vercel
 title: Google Cloud Platform Integration With Vercel's Next.js
 caption: A simplified guide to using GCP services with Next.js and Vercel.
-date: 'December 28th, 2020'
+date: 'December 28, 2020'
 tags: ['Vercel', 'GCP', 'Vision API', 'Secrets']
 image: 'images/diego-gutierrez--nL-LqkiKXw-unsplash.jpg'
 ---

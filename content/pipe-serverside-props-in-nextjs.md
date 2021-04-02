@@ -3,7 +3,7 @@ slug: pipe-serverside-props-in-nextjs
 category: next-vercel
 title: Using a pipe function in Next.js getServerSideProps
 caption: Organize your server side props with ease!
-date: "July 25th, 2020"
+date: "July 25, 2020"
 tags: ["Next.js", "Typescript", "React"]
 image: "images/daniel-mirlea-WGdliLPgMaA-unsplash.jpg"
 ---

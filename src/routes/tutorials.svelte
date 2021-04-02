@@ -1,5 +1,5 @@
 <script context="module">
-  export function preload({ params, query }) {
+  export function preload() {
     return this.fetch(`blog.json`)
       .then(r => r.json())
       .then(posts => {
@@ -88,7 +88,6 @@
 </style>
 
 <svelte:head>
-  <Head />
   <title>Frontend Devops</title>
   <meta
     name="description"

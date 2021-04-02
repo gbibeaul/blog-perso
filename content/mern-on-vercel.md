@@ -3,7 +3,7 @@ slug: mern-on-vercel
 category: next-vercel
 title: Host your existing MERN app on Vercel
 caption: Mern in a new way!
-date: "December 6th, 2020"
+date: "December 6, 2020"
 tags: ["Vercel", "MERN", "Hosting"]
 image: "images/pawel-czerwinski-Lki74Jj7H-U-unsplash.jpg"
 ---
