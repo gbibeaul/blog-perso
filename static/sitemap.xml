@@ -63,4 +63,8 @@
     <url>
         <loc>https://www.frontend-devops.com/blog/learning-deployments</loc>
     </url>
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/hosting-react-vite</loc>
+    </url>
 </urlset>
