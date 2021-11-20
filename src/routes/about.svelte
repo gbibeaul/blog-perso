@@ -61,7 +61,7 @@
     <address class="socials">
       <a href="https://github.com/gbibeaul" class="fa fa-github" />
       <a
-      href="https://twitter.com/BibeauGuillaume"
+      href="https://twitter.com/contrariancoder"
       class="fa fa-twitter" />
     </address>
   </div>

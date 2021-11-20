@@ -21,6 +21,10 @@
     </url>
 
     <url>
+        <loc>https://www.frontend-devops.com/blog/hosting-web3-app-part-1</loc>
+    </url>
+
+    <url>
         <loc>https://www.frontend-devops.com/blog/setup-express-api-aws-lambda</loc>
     </url>
 
@@ -37,15 +41,7 @@
     </url>
 
     <url>
-        <loc>https://www.frontend-devops.com/blog/image-optimization-nextjs</loc>
-    </url>
-
-    <url>
         <loc>https://www.frontend-devops.com/blog/python-on-vercel></loc>
-    </url>
-
-    <url>
-        <loc>https://www.frontend-devops.com/blog/gcp-vercel-integration</loc>
     </url>
 
     <url>
