@@ -51,7 +51,7 @@ CMS_API_URL=http://localhost:4000/graphql
 In Next.js, any variable you prefix with `NEXT_PUBLIC` will be made available to code that runs on the browser. Any other variables will be scoped to the server(`getStaticProps` and `getServerSideProps`). In our scenario, the server will hydrate our pages with CMS data so we will keep `CMS_API_URL` hidden from the browser while `NEXT_PUBLIC_ETH_NETWORK` would be consumed in the browser for calling the Ethereum blockchain.
 
 
-### **Providing type safe environmennt varialbe to our code**
+### **Providing type safe environmennt variable to our code**
 
 However, we now face a dilemma. How can we be sure that those values will not break our code? We often don't control the build systems as Front-End developers so we should at least try to prevent errors from happening where we can! Here comes in type guards in Typescript. Here is an example where we will ensure we have a real Ethereum network:
 
