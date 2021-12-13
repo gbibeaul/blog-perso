@@ -63,4 +63,10 @@
     <url>
         <loc>https://www.frontend-devops.com/blog/hosting-react-vite</loc>
     </url>
+
+    <url>
+        <loc>https://www.frontend-devops.com/blog/typescript-nextjs-config</loc>
+    </url>
+
+    typescript-nextjs-config
 </urlset>

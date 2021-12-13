@@ -3,7 +3,7 @@ slug: hosting-web3-app-part-1
 category: next-vercel
 title: How to host a Web3 app on Vercel
 caption: Is there anything different about it?
-date: "November 210, 2021"
+date: "November 21, 2021"
 tags: ["Web3", "Metamask", "Vercel"]
 image: "images/hosting-web3-app-part-1/erlend-ekseth-0a5VbkqqFFE-unsplash.jpg"
 ---
